@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --brand-bg: #ffffff;
+  --brand-surface: #ffffff;
+  --brand-text: #000000;
+  --brand-muted: #737373;
+  --brand-border: rgba(0, 0, 0, 0.05);
+  --brand-overlay: rgba(0, 0, 0, 0.02);
+  --brand-accent: #000000;
+}
+
+.dark {
+  --brand-bg: #000000;
+  --brand-surface: #000000;
+  --brand-text: #ffffff;
+  --brand-muted: #a3a3a3;
+  --brand-border: rgba(255, 255, 255, 0.1);
+  --brand-overlay: rgba(255, 255, 255, 0.05);
+  --brand-accent: #ffffff;
+}
+
+@theme {
+  --color-brand-bg: var(--brand-bg);
+  --color-brand-surface: var(--brand-surface);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-text: var(--brand-text);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-border: var(--brand-border);
+  --color-brand-overlay: var(--brand-overlay);
+  
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply transition-colors duration-300;
+  }
+  body {
+    @apply bg-brand-bg text-brand-text antialiased overflow-x-hidden selection:bg-brand-text selection:text-brand-bg;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tighter;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border);
+  border-radius: 10px;
+  border: 2px solid var(--color-brand-surface);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-accent);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-border) var(--color-brand-surface);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-surface text-brand-text antialiased overflow-x-hidden;
+  }
+  h1 { font-size: clamp(2.5rem, 10vw, 5rem); }
+  h2 { font-size: clamp(2rem, 8vw, 3.5rem); }
+  h3 { font-size: clamp(1.5rem, 6vw, 2.25rem); }
+}
