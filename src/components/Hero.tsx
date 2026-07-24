@@ -34,15 +34,15 @@ export default function Hero() {
       {/* Subtle Ambient Shadow */}
       <motion.div
         animate={{
-          scale: [1, 1.05, 1],
-          opacity: [0.03, 0.05, 0.03],
+          scale: [0.8, 0.9, 0.8],
+          opacity: [0.01, 0.015, 0.01],
         }}
         transition={{
           duration: 10,
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-text rounded-full blur-[120px] pointer-events-none"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-brand-text rounded-full blur-[100px] pointer-events-none"
       />
 
       {/* Center 3D Avatar Box */}
@@ -103,8 +103,8 @@ export default function Hero() {
       >
         <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
           <span className="text-[10px] uppercase tracking-widest font-bold mb-2">Contact</span>
-          <a href="mailto:hello@m3do.dev" className="text-brand-text hover:opacity-60 transition-opacity font-medium">
-            hello@m3do.dev
+          <a href="mailto:m3doawadh@gmail.com" className="text-brand-text hover:opacity-60 transition-opacity font-medium">
+            m3doawadh@gmail.com
           </a>
         </div>
 

@@ -53,8 +53,8 @@ export default function Contact() {
           <div className="space-y-8 pt-8 border-t border-brand-border">
             <div>
               <p className="text-[10px] uppercase tracking-widest text-brand-muted font-bold mb-2">Email</p>
-              <a href="mailto:hello@m3do.dev" className="text-brand-text hover:opacity-70 transition-opacity text-2xl font-light">
-                hello@m3do.dev
+              <a href="mailto:m3doawadh@gmail.com" className="text-brand-text hover:opacity-70 transition-opacity text-2xl font-light">
+                m3doawadh@gmail.com
               </a>
             </div>
 
@@ -65,7 +65,7 @@ export default function Contact() {
 
             <div className="flex gap-4 pt-4">
               <motion.a
-                href="#"
+                href="https://instagram.com/m3do.i"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5, scale: 1.05 }}
@@ -80,7 +80,7 @@ export default function Contact() {
                 />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://wa.me/254103479062"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5, scale: 1.05 }}
@@ -95,7 +95,7 @@ export default function Contact() {
                 />
               </motion.a>
               <motion.a
-                href="https://github.com"
+                href="https://github.com/m3doweb"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5, scale: 1.05 }}

@@ -41,7 +41,7 @@ export default function Navbar() {
               referrerPolicy="no-referrer"
             />
           </div>
-          <span className="text-brand-text font-bold tracking-wider">M3DO</span>
+          <span className="text-brand-text font-bold tracking-wider">m3do</span>
         </motion.div>
 
         {/* Center Pills & Theme Toggle */}
