@@ -25,7 +25,7 @@ export default function Navbar() {
         style={{ scaleX }}
       />
 
-      <nav className="fixed top-0 left-0 w-full z-40 px-4 sm:px-8 py-3 sm:py-5 flex justify-between items-center max-w-7xl mx-auto left-1/2 -translate-x-1/2 bg-brand-bg/70 backdrop-blur-xl border-b border-brand-border transition-colors duration-300">
+      <nav className="fixed top-0 left-0 w-full z-40 px-3 sm:px-8 py-3 sm:py-5 flex justify-between items-center max-w-7xl mx-auto left-1/2 -translate-x-1/2 bg-brand-bg/70 backdrop-blur-xl border-b border-brand-border transition-colors duration-300">
         {/* Brand */}
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -41,12 +41,12 @@ export default function Navbar() {
               referrerPolicy="no-referrer"
             />
           </div>
-          <span className="text-brand-text font-bold tracking-wider">m3do</span>
+          <span className="hidden sm:block text-brand-text font-bold tracking-wider">m3do</span>
         </motion.div>
 
         {/* Center Pills & Theme Toggle */}
-        <div className="flex items-center gap-2 sm:gap-3">
-          <div className="flex items-center gap-1.5 sm:gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-3">
+          <div className="hidden sm:flex items-center gap-1.5 sm:gap-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="px-3 sm:px-3.5 py-1.5 rounded-xl border border-brand-border bg-brand-surface backdrop-blur-md text-[10px] sm:text-xs text-brand-muted font-bold flex items-center justify-center min-h-[32px] sm:min-h-[36px] cursor-pointer hover:text-brand-text transition-colors uppercase tracking-widest"
@@ -73,12 +73,12 @@ export default function Navbar() {
             whileTap={{ scale: 0.9 }}
             onClick={toggleTheme}
             aria-label="Toggle Theme"
-            className="w-9 h-9 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-text/20 flex items-center justify-center text-brand-text transition-all cursor-pointer"
+            className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-text/20 flex items-center justify-center text-brand-text transition-all cursor-pointer"
           >
             {theme === "dark" ? (
-              <Sun className="w-4 h-4" />
+              <Sun className="w-3.5 h-3.5 sm:w-4 h-4" />
             ) : (
-              <Moon className="w-4 h-4" />
+              <Moon className="w-3.5 h-3.5 sm:w-4 h-4" />
             )}
           </motion.button>
         </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => scrollTo('contact')}
-          className="px-6 py-2 rounded-full bg-brand-text text-brand-bg text-[10px] uppercase tracking-widest font-bold transition-all min-h-[40px] flex items-center justify-center cursor-pointer hover:opacity-90"
+          className="px-4 sm:px-6 py-2 rounded-full bg-brand-text text-brand-bg text-[10px] uppercase tracking-widest font-bold transition-all min-h-[36px] sm:min-h-[40px] flex items-center justify-center cursor-pointer hover:opacity-90"
         >
           Contact
         </motion.button>
